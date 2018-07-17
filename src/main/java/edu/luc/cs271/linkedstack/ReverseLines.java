@@ -6,20 +6,23 @@ import java.util.Stack;
 public class ReverseLines {
 
   public static void main(final String[] args) {
-    // TODO read successive input lines until EOF, then print out in reverse order
-    LinkedStack<String> stack = new LinkedStack<>();
-    final Scanner input = new Scanner(System.in);
-    while (input.hasNextLine()) {
-
-      final String line = input.nextLine();
-      stack.push(line);
-      }
-      while(!Stack.isEmpty(){
-      System.out.println(stack.pop())
+      final Scanner input = new Scanner(System.in);
+      printReverse(input);
     }
 
+  private static void printReverse(final Scanner input) {
+    if(!input.hasNextLine()){
+      return;
+    }
+    final String line = input.nextLine();
+    System.out.println(line);
+
+    printReverse(input);
+    System.out.println(line);
 
 
 
+    // TODO recursively read and print successive input lines until EOF, then print them out in reverse order
+    //DONE
   }
 }
