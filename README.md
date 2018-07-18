@@ -11,7 +11,7 @@
 
 2. Why do these methods need to have arguments, and how does the argument change from one recursive call to the next?
 
-  - You need arguments as you are operating on these arguments in each recursive call. 
+  - You need arguments as you are operating on these arguments in each recursive call. The argument changes from one recursive call to the next by passing curr.next, to point to the next node.
 
 3. What are the time and space complexity of each of the populateList populateFifoList methods, as well as ReverseLines.printReverse?
 
