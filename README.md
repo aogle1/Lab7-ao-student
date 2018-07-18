@@ -1,4 +1,4 @@
-# COMP 271 002 F17 Lab 5 (Week 7)
+# COMP 271 002 F17 Lab 7
 
 # Questions
 
